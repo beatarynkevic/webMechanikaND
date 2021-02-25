@@ -3,6 +3,7 @@
 _d($_GET);
 if(isset($_GET['nuoroda'])) {
     header('Location: http://localhost/darbasSuFailais/nd/nr5/red.php');
+    die;
 }
 
 ?>

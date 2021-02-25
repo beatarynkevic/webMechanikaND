@@ -1,20 +1,18 @@
 <!-- 6 . 
-Padarykite puslapį su dviem mygtukais. Mygtukus įdėkite į dvi skairtingas formas- vieną GET ir kitą POST. Nenaudodami jokių konkrečių $_GET ar $_POST reikšmių, o tik tikrindami pačius masyvus, nuspalvinkite foną žaliai, kai paspaustas mygtukas iš GET formos ir geltonai- kai iš POST. -->
+Padarykite puslapį su dviem mygtukais. Mygtukus įdėkite į dvi skairtingas formas- vieną GET ir kitą POST.
+Nenaudodami jokių konkrečių $_GET ar $_POST reikšmių, o tik tikrindami pačius masyvus, nuspalvinkite foną žaliai,
+kai paspaustas mygtukas iš GET formos ir geltonai- kai iš POST. -->
 <!-- 7 .
 Pakartokite 6 uždavinį. Papildykite jį kodu, kuris naršyklę po POST metodo peradresuotų tuo pačiu adresu (t.y. į patį save) jau GET metodu. -->
 
 <?php
-if (isset($_GET['zalia'])){
-  $color = 'green';
-  _d($color);
+if(isset($_GET['get'])) {
+    $color = 'green';
 }
-
-if (isset($_POST['geltona'])){
+if(isset($_POST['post'])) {
     $color = 'yellow';
-    //dvi eilutes septintai uzduociai: 
-    header('Location: http://localhost/bit/ndWEB7/sestas.php');
-    die;
-} 
+    header("Location: ./nr6.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -25,16 +23,13 @@ if (isset($_POST['geltona'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style='background-color: <?= $color?>;'>
-
+<body style="background-color: <?= $color?>">
 <form action="" method="get">
-<input type="text" name="zalia">
-<button type="submit">GET SMTHnG</button>
+    <button type="submit" name="get">GET SMTHnG</button>
 </form>
 
 <form action="" method="post">
-<input type="text" name="geltona">
-<button type="submit">POST SMTHNG</button>
+    <button type="submit" name="post">POST SMTHNG</button>
 </form>
 
 </body>

@@ -15,6 +15,6 @@ $color = isset($_GET['color']) ? 'red' : 'black;'
 </head>
 <body style="background:<?= $color ?>;">
     <a href="?">Black</a>
-    <a href="?color=1">Red</a>
+    <a href="?color=belekas">Red</a>
 </body>
 </html>

@@ -6,23 +6,15 @@ kai paspaustas mygtukas iš GET formos ir geltonai- kai iš POST. -->
 Pakartokite 6 uždavinį. Papildykite jį kodu, kuris naršyklę po POST metodo peradresuotų tuo pačiu adresu (t.y. į patį save) jau GET metodu. -->
 
 <?php
-
 _d($_SERVER['REQUEST_METHOD']);
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $color = 'yellow';
+    // header("Location: ./nr6.php"); <<<7uzduoties
+    //die;
 }
 if ($_SERVER['REQUEST_METHOD'] == 'GET'){
     $color = 'green';
 }
-
-
-// if(isset($_GET['get'])) { <<<kitoks 6
-//     $color = 'green';
-// }
-// if(isset($_POST['post'])) {
-//     $color = 'yellow';
-//     // header("Location: ./nr6.php"); <<<7uzduoties
-// }
 ?>
 
 <!DOCTYPE html>
@@ -34,13 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET'){
     <title>Document</title>
 </head>
 <body style="background-color: <?= $color?>">
-<form action="" method="get">
-    <button type="submit">GET SMTHnG</button>
-</form>
+    <form action="" method="get">
+        <button type="submit">GET SMTHnG</button>
+    </form>
 
-<form action="" method="post">
-    <button type="submit">POST SMTHNG</button>
-</form>
-
+    <form action="" method="post">
+        <button type="submit">POST SMTHNG</button>
+    </form>
 </body>
 </html>

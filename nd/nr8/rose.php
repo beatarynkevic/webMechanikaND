@@ -2,10 +2,15 @@
 <html lang="en">
 
 <?php
- if (isset($_GET['get'])){
-   header("Location: ./pink.php");
-   die;
- }
+//  if (isset($_GET['get'])){
+//    header("Location: ./pink.php");
+//    die;
+//  }
+
+if($_SERVER['REQUEST_METHOD'] !== 'POST') {
+  header ("Location: ./pink.php");
+  die;
+}
 ?>
 
 <head>

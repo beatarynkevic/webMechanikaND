@@ -9,8 +9,8 @@ Pakartokite 6 uždavinį. Papildykite jį kodu, kuris naršyklę po POST metodo 
 _d($_SERVER['REQUEST_METHOD']);
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $color = 'yellow';
-    // header("Location: ./nr6.php"); <<<7uzduoties
-    //die;
+    header("Location: ./nr6.php"); //<<<7uzduoties
+    die;
 }
 if ($_SERVER['REQUEST_METHOD'] == 'GET'){
     $color = 'green';

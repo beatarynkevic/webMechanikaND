@@ -2,8 +2,9 @@
 <html lang="en">
 
 <?php
- if (!isset($_POST['post'])){
+ if (isset($_GET['get'])){
    header("Location: ./pink.php");
+   die;
  }
 ?>
 

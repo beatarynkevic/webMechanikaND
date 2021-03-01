@@ -48,5 +48,5 @@
 </html>
 
 <!-- Padarykite taip, kad paspaudus mygtuką, 
-  fono spalva pasikeistų į baltą, 
-  forma išnyktų ir atsirastų skaičius, rodantis kiek buvo pažymėta checkboksų (ne kurie, o kiek). -->
+fono spalva pasikeistų į baltą, forma išnyktų ir atsirastų skaičius,
+rodantis kiek buvo pažymėta checkboksų (ne kurie, o kiek). -->
